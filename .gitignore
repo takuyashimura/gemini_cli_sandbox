@@ -1,0 +1,27 @@
+# .gitignoreファイルを作成
+cat > .gitignore << 'EOF'
+# Google Cloud SDK
+google-cloud-sdk/
+google-cloud-cli-linux-x86_64.tar.gz
+*.tar.gz
+
+# API Keys and credentials
+.env
+service-account-key.json
+**/application_default_credentials.json
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+EOF
